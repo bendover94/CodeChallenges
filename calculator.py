@@ -27,6 +27,9 @@ while 1:
     num_1 = input("\nNummer 1: ")
     operator = input("Operand : ")
     num_2 = input("Nummer 2: ")
-    print(f"\nDas Ergebnis von " + num_1 + " " + operator + " " + num_2 + " = " + str(calc_function(num_1, operator, num_2)))
+    print(f"\nDas Ergebnis von {num_1} {operator} {num_2} = " + str(calc_function(num_1, operator, num_2)))
+    #print("\nDas Ergebnis von " + num_1 + " " + operator + " " + num_2 +  " = " + str(calc_function(num_1, operator, num_2)))
+   
 
+    
 # print(str(calc_function(4, "+", 2)))

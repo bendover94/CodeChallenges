@@ -13,7 +13,7 @@ def count_X_and_O(inputString):
     inputString = inputString.lower()
     listFromString = list(inputString)
     for i in range(0, len(listFromString)):
-        if listFromString[int(i)] == "x":
+        if listFromString[i] == "x":
             x+=1
         elif listFromString[i] == "o":
             o+=1

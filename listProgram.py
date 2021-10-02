@@ -5,7 +5,7 @@
 # If it's "desc," then the list should be in descending order, and if it's "none," it should return the original list unaltered.
 
 list_1 = [7,5,3,8,12,1,2,9,6,4,11,10]
-
+input_arg = "asc"
 
 def arrangeList(list, input_arg):
     if input_arg == "asc":
@@ -18,7 +18,8 @@ def arrangeList(list, input_arg):
         print("\nkein gültiger Sortierstil\n")
 
 
-print("\nDas ist die ungeordnete Liste\n", list_1)
+while input_arg != "q":
+    print("\nDas ist die ungeordnete Liste\n", list_1)
 
-input_arg = input("\nBitte wählen Sie 'asc' oder 'desc' um festzulegen wie die Liste sortiert werden soll.\nEingabe: ")
-arrangeList(list_1, input_arg)
+    input_arg = input("\nBitte wählen Sie 'asc' oder 'desc' um festzulegen wie die Liste sortiert werden soll.\nEingabe: ")
+    arrangeList(list_1, input_arg)

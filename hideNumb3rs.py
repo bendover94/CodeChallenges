@@ -6,10 +6,12 @@ def hideDigits(cardNumb3r):
     cardNumb3r_list = list(cardNumb3r)              #convert string to List
     
     for i in range(0,len(cardNumb3r_list)-4):       #iterate within range(start,stop,step) step is optional: default(1)
-        cardNumb3r_list[int(i)] = "*"               #change char
+        cardNumb3r_list[i] = "*"                    #change char
         
     new_cardNumb3r = "".join(cardNumb3r_list)       #convert list into string
     return new_cardNumb3r                           #return string
+
+    #return cardNumb3r_list                            #return string
 
 cardNumb3r = input("Bitte Kreditkartennummer angeben (16-stellig)\nEingabe: ")
 print(hideDigits(cardNumb3r))
